@@ -1,0 +1,71 @@
+/* Custom Styles for Portfolio */
+
+/* Enable smooth scrolling across the entire site */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Set a clean default font */
+body {
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa; 
+}
+
+/* Navbar shadow for better depth */
+.navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hero section subtle gradient */
+header {
+    background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+}
+
+/* -----------------------------------
+   Card Hover Animations 
+   (Used on About, Skills, Certifications)
+-------------------------------------- */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* -----------------------------------
+   Button Hover Animations
+-------------------------------------- */
+.btn {
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.03);
+}
+
+/* -----------------------------------
+   Carousel Enhancements
+-------------------------------------- */
+.carousel-item {
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0.5rem;
+}
+
+/* -----------------------------------
+   Progress Bar Animation
+-------------------------------------- */
+.progress-bar {
+    transition: width 1.5s ease-in-out;
+}
+
+/* Modal image placeholder styling */
+.border-dashed {
+    border-style: dashed !important;
+    border-width: 2px !important;
+}
